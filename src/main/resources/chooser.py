@@ -38,8 +38,6 @@ for subdir, dirs, files in os.walk(musicLibPath):
                           "m4a")):
             albumsList.append(subdir)
             break
-for x in albumsList:
-    print(x)
 size = len(albumsList)
 print("albums found :", size)
 selectedAlbumIndex = random.randint(0, size)
